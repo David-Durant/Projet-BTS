@@ -1,0 +1,9 @@
+Changer les ports MYSQL et MariaDB :
+
+
+
+Ligne paramétrage compte MYSQL :
+USE mysql;
+SET password for 'root'@'localhost' = 'fctice';
+CREATE user 'David_Durant'@'localhost' IDENTIFIED by 'david_MYSQL';
+GRANT ALL PRIVILEGES ON *.* TO 'David_Durant'@'localhost' WITH GRANT OPTION;

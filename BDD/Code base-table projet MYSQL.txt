@@ -1,0 +1,21 @@
+CREATE DATABASE rms CHARACTER set 'utf8';
+USE rms;
+CREATE TABLE client ( IdClient smallint unsigned auto_increment, Nom varchar(255) not null, Prenom varchar(255) not null, DateNaissance date not null, PRIMARY KEY (IdClient) ) ENGINE=INNODB;
+CREATE TABLE config_bouton ( NumeroBouton tinyint unsigned, Rouge tinyint unsigned, Vert tinyint unsigned, Bleu tinyint unsigned ) ENGINE=INNODB;
+CREATE TABLE sequence ( IdSequence smallint unsigned auto_increment, NbreRepetition tinyint unsigned, NomSequence varchar(50) not null, PRIMARY KEY (IdSequence) ) ENGINE=INNODB;
+CREATE TABLE tests ( IdTest int unsigned auto_increment, IdClient smallint unsigned, IdSequence smallint unsigned, NbreEtapesSequence int unsigned, NbreEtapesTimeout int unsigned, NbreEtapesExecutees int unsigned, TempsTotalSequence decimal(5,1) unsigned, Date datetime not null, PRIMARY KEY (IdTest) ) ENGINE=INNODB;
+CREATE TABLE etapes ( IdEtapes smallint unsigned auto_increment, IdSequence smallint unsigned, NumeroEtapeSequence tinyint unsigned, TempsEtapes decimal(5,1) unsigned, PRIMARY KEY (IdEtapes) ) ENGINE=INNODB;
+CREATE TABLE config_rms ( NbreBoutonEsclave tinyint unsigned, AdresseIPBoutonMaitre tinyint unsigned ) ENGINE=INNODB;
+
+ALTER TABLE tests ADD CONSTRAINT relationIdClient FOREIGN KEY (IdClient) REFERENCES client(IdClient);
+ALTER TABLE tests ADD CONSTRAINT relationIdSeqTests FOREIGN KEY (IdSequence) REFERENCES sequence(IdSequence);
+ALTER TABLE etapes ADD CONSTRAINT relationIdSeqEtapes FOREIGN KEY (IdSequence) REFERENCES sequence(IdSequence);
+
+INSERT INTO `client`(`IdNom`, `Nom`, `Prenom`) VALUES (NULL,'Durant','David');
+INSERT INTO `sequence`(`IdSequence`, `ListeEtapes`, `NbreRepetition`) VALUES (NULL,'0302010405',0);
+INSERT INTO `tests`(`IdTestClient`, `IdNom`, `IdSequence`, `Resultat`, `Date`) VALUES (NULL,1,1,'100090','2020-04-08 13:43:00') ;  
+
+INSERT INTO `tests`(`IdTestClient`, `IdNom`, `IdSequence`, `Resultat`, `Date`) SELECT NULL, IdNom, NULL, '100099031', '2020-04-08 13:30:00' FROM client WHERE Nom = 'Durant' AND Prenom = 'David' 
+
+
+
