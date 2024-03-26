@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{222ABF0E-6622-4404-8821-FDB27630C9D7}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>RMS</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>D:\BTS\2eme_annee\Informatique\Autres\Projet_BTS\Librairies\mysql-connector-c++-8.0.19-winx64\include;D:\BTS\2eme_annee\Informatique\Autres\Projet_BTS\Librairies\boost_1_72_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>D:\BTS\2eme_annee\Informatique\Autres\Projet_BTS\Librairies\mysql-connector-c++-8.0.19-winx64\lib64\vs14</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mysqlcppconn.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CBDD.h" />
+    <ClInclude Include="CBddDlg.h" />
+    <ClInclude Include="CMenuCreationBasePatient.h" />
+    <ClInclude Include="CMenuCreerPatient.h" />
+    <ClInclude Include="CMenuDefinitionUneSequence.h" />
+    <ClInclude Include="CMenuEffacerPatient.h" />
+    <ClInclude Include="CMenuEffacerSequence.h" />
+    <ClInclude Include="CMenuHistoriqueResultats.h" />
+    <ClInclude Include="CMenuModificationSequence.h" />
+    <ClInclude Include="CMenuParamMateriels.h" />
+    <ClInclude Include="CMenuSauvegarderBasePatient.h" />
+    <ClInclude Include="CMenuTesterMateriels.h" />
+    <ClInclude Include="Constantes.h" />
+    <ClInclude Include="CparamRMS.h" />
+    <ClInclude Include="Globales.h" />
+    <ClInclude Include="CMenuDefinitionSequences.h" />
+    <ClInclude Include="CMenuGestionPatients.h" />
+    <ClInclude Include="CMenuParametrages.h" />
+    <ClInclude Include="CMenuExecutionSeance.h" />
+    <ClInclude Include="CMenuPrincipal.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="RMS.h" />
+    <ClInclude Include="RMS_Dlg.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CBDD.cpp" />
+    <ClCompile Include="CBddDlg.cpp" />
+    <ClCompile Include="CMenuCreationBasePatient.cpp" />
+    <ClCompile Include="CMenuCreerPatient.cpp" />
+    <ClCompile Include="CMenuDefinitionSequences.cpp" />
+    <ClCompile Include="CMenuDefinitionUneSequence.cpp" />
+    <ClCompile Include="CMenuEffacerPatient.cpp" />
+    <ClCompile Include="CMenuEffacerSequence.cpp" />
+    <ClCompile Include="CMenuGestionPatients.cpp" />
+    <ClCompile Include="CMenuHistoriqueResultats.cpp" />
+    <ClCompile Include="CMenuModificationSequence.cpp" />
+    <ClCompile Include="CMenuParametrages.cpp" />
+    <ClCompile Include="CMenuExecutionSeance.cpp" />
+    <ClCompile Include="CMenuParamMateriels.cpp" />
+    <ClCompile Include="CMenuPrincipal.cpp" />
+    <ClCompile Include="CMenuSauvegarderBasePatient.cpp" />
+    <ClCompile Include="CMenuTesterMateriels.cpp" />
+    <ClCompile Include="Globales.cpp" />
+    <ClCompile Include="RMS.cpp" />
+    <ClCompile Include="RMS_Dlg.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RMS.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RMS.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave1.bmp" />
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave10.bmp" />
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave11.bmp" />
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave12.bmp" />
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave2.bmp" />
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave3.bmp" />
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave4.bmp" />
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave5.bmp" />
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave6.bmp" />
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave7.bmp" />
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave8.bmp" />
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave9.bmp" />
+    <Image Include="res\BoutonsEsclaves\BoutonEsclaveEteint.bmp" />
+    <Image Include="res\FCreationBasePatient.bmp" />
+    <Image Include="res\FCreerPatient.bmp" />
+    <Image Include="res\FDefinitionSequence.bmp" />
+    <Image Include="res\FDefinitionUneSequence.bmp" />
+    <Image Include="res\FEffacerPatient.bmp" />
+    <Image Include="res\FEffacerSequence.bmp" />
+    <Image Include="res\FExecutionSeance.bmp" />
+    <Image Include="res\FGestionClient.bmp" />
+    <Image Include="res\FGestionPatient.bmp" />
+    <Image Include="res\FGestionSequence.bmp" />
+    <Image Include="res\FHistoriqueResultats.bmp" />
+    <Image Include="res\FModificationSequence.bmp" />
+    <Image Include="res\Fparametrage.bmp" />
+    <Image Include="res\FParamMateriels.bmp" />
+    <Image Include="res\FPrincipal.bmp" />
+    <Image Include="res\FSauvegardeBasePatient.bmp" />
+    <Image Include="res\FTesterMateriels.bmp" />
+    <Image Include="res\icons\button.png" />
+    <Image Include="res\icons\icon_V1.ico" />
+    <Image Include="res\patient.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

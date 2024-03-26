@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuPrincipal.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuParametrages.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuDefinitionSequences.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuGestionPatients.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Globales.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuExecutionSeance.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuCreerPatient.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuEffacerPatient.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuCreationBasePatient.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuDefinitionUneSequence.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Constantes.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="RMS.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="RMS_Dlg.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuParamMateriels.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuEffacerSequence.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuHistoriqueResultats.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuModificationSequence.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuSauvegarderBasePatient.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuTesterMateriels.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CparamRMS.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CBDD.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CBddDlg.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuPrincipal.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuParametrages.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuDefinitionSequences.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuGestionPatients.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Globales.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuExecutionSeance.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuCreerPatient.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuEffacerPatient.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuCreationBasePatient.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuDefinitionUneSequence.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="RMS.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="RMS_Dlg.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuParamMateriels.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuEffacerSequence.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuHistoriqueResultats.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuModificationSequence.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuSauvegarderBasePatient.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuTesterMateriels.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CBDD.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CBddDlg.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RMS.rc">
+      <Filter>Fichiers de ressources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RMS.rc2">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\FPrincipal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\Fparametrage.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FGestionClient.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FExecutionSeance.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FDefinitionSequence.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FGestionPatient.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FCreerPatient.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FGestionSequence.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FDefinitionUneSequence.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave1.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave2.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave3.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave4.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave5.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave6.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave7.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave8.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave9.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave10.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave11.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclave12.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\BoutonsEsclaves\BoutonEsclaveEteint.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\patient.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FParamMateriels.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FCreationBasePatient.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FEffacerSequence.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FEffacerPatient.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\icons\button.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\icons\icon_V1.ico">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FHistoriqueResultats.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FModificationSequence.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FSauvegardeBasePatient.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\FTesterMateriels.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
